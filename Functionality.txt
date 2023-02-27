@@ -1,0 +1,5 @@
+-Spin loader
+-Fetching API
+-Fetching Local API
+-CSS : make like a button clicked
+-Twitter sharing quote

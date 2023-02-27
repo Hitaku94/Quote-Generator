@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #e7f5f7;
+background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23654679' fill-opacity='0.4'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+display:flex;
+justify-content: center;
+align-items: center;
+font-family: "Shantell Sans", sans-serif;
+text-align: center;
+}
+
+.quote_container {
+    width: auto;
+    max-width: 900px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.4);
+    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.2);
+}
+
+.quote_text {
+    font-weight: bold;
+    font-size: 2.75rem;
+}
+
+.long_quote {
+    font-size: 2rem;
+}
+
+.fa_quote_left {
+    font-size: 4rem;
+}
+
+.quote_author {
+    margin-top: 15px;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.button_container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    border-radius: 10px;
+    padding: 0.5rem 1.8rem;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border: none;
+    color: white;
+    background: #333;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+
+button:hover {
+    background: #575757;
+}
+
+button:active {
+    transform: translate(0, 0.3rem);
+    box-shadow: none;
+}
+
+.twitter_button:hover {
+    color: #38a1f3;
+}
+
+.fa-twitter{
+    font-size: 1.5rem;
+}
+
+/* Loader */
+
+
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 7rem;
+    height: 7rem;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid black;
+    border-color: black transparent black transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+/* Media query: Tablet or Samller */
+
+@media screen and (max-width: 1000px) {
+    .quote_container{
+        margin: auto 10px;
+    }
+    .quote_text {
+        font-size: 2rem;
+    }
+    .quote_author {
+        font-size: 1.5rem;
+    }
+}
